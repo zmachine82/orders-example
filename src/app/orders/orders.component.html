@@ -1,0 +1,11 @@
+<div >
+  <div>
+    <input type="text" [(ngModel)]="newOrderText">
+    <button [disabled]="newOrderText === ''" (click)="addNewOrder()">Add Order</button>
+  </div>
+  <div class="container">
+
+    <app-all-orders [orders]="orders" ></app-all-orders>
+    <app-recent-orders [orders]="getFiveMostRecentOrders()"></app-recent-orders>
+  </div>
+</div>

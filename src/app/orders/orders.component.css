@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+app-all-orders {
+  width: 50%;
+  background-color: lightblue;
+}
+
+app-recent-orders {
+  width: 50%;
+  background-color: lightcoral;
+}
